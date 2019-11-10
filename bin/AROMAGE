@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 require 'faker'
-require_relative '../app/person'
+# require_relative '../app/person'
+# require_relative '../app/lorem'
+require_relative '../app/jobs'

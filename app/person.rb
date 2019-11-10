@@ -1,4 +1,9 @@
 name = Faker::Name.name
-email = Faker::Internet.email
-city = Faker::Address.city
-address = Faker::Address.street_address
+address = Faker::Address.full_address
+email = "#{name.delete(" \t\r\n")}@gmail.com"
+work = Faker::Company.name
+
+puts "Name : #{name}"
+puts "Address : #{address}"
+puts "Email : #{email}"
+puts "Work at : #{work}"
